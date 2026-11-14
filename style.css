@@ -15,6 +15,8 @@
 :root {
     --side-bar-background-color: rgb(14, 147, 230);
     --side-bar-main-color: white;
+    --header-background-color: white;
+    --header-main-color: black;
 }
 
 * {
@@ -83,4 +85,96 @@ body {
 
 .side-bar > ul > li.separation {
     padding: 20px;
+}
+
+.header {
+    display: grid;
+    grid-template: 4fr 6fr / 1fr 500px;
+    align-items: center;
+    padding: 0 64px;
+    background-color: var(--header-background-color);
+    color: var(--header-main-color);
+}
+
+.header path {
+    fill: var(--header-main-color);
+}
+
+.header > .search-section {
+    display: grid;
+    grid-template-columns: 32px 9fr 1fr;
+    gap: 16px;
+}
+
+.header > .search-section > .search-button {
+    background-color: var(--header-background-color);
+    border: none;
+}
+
+.header > .search-section > .search-bar {
+    padding: 4px;
+    background-color: rgb(210, 210, 225);
+    border: none;
+    border-radius: 16px;
+}
+
+.header > .profile-section {
+    display: grid;
+    grid-template-columns: 4fr 32px 50px 6fr;
+    grid-template-areas: ". notification-button profile-image username";
+    gap: 32px;
+    align-items: center;
+}
+
+.header > .profile-section > .notification-button {
+    grid-area: notification-button;
+    background-color: var(--header-background-color);
+    border: none;
+}
+
+.header > .profile-section > .profile-image {
+    grid-area: profile-image;
+}
+
+.header > .profile-section > h3 {
+    grid-area: username;
+}
+
+.header > .welcome-section {
+    display: grid;
+    grid:
+        "profile-image introduction" 1fr
+        "profile-image username" 1fr / 80px 1fr;
+    align-items: center;
+}
+
+.header > .welcome-section > .profile-image {
+    grid-area: profile-image;
+}
+
+.header > .welcome-section > p {
+    grid-area: introduction;
+    font-weight: 500;
+    align-self: self-end;
+}
+
+.header > .welcome-section > h2 {
+    grid-area: username;
+    align-self: self-start;
+}
+
+.header > .action-section {
+    display: grid;
+    grid: 1fr / auto-flow 1fr;
+    gap: 32px;
+}
+
+.header > .action-section > button {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--side-bar-main-color);
+    background-color: var(--side-bar-background-color);
+    border: none;
+    border-radius: 32px;
 }

@@ -12,8 +12,75 @@
     font-style: italic;
 }
 
+:root {
+    --side-bar-background-color: rgb(14, 147, 230);
+    --side-bar-main-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 360px [side-bar-end] 1fr;
+    font-family: Roboto;
+}
+
+.side-bar {
+    height: 100vh;
+    padding: 12px;
+    grid-column-end: "side-bar-end";
+    background-color: var(--side-bar-background-color);
+    color: var(--side-bar-main-color);
+}
+
+.side-bar > .logo-container > svg {
+    vertical-align: middle;
+    height: 64px;
+}
+
+.side-bar > .logo-container > svg path {
+    fill: var(--side-bar-main-color);
+}
+
+.side-bar > .logo-container > p {
+    font-size: 2.5rem;
+    vertical-align: middle;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.side-bar > ul {
+    padding: 40px 12px;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    list-style: none;
+}
+
+.side-bar > ul > li {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.side-bar > ul > li > svg {
+    height: 32px;
+    margin-right: 24px;
+}
+
+.side-bar > ul > li > svg path {
+    fill: var(--side-bar-main-color);
+}
+
+.side-bar > ul > li > a {
+    text-decoration: none;
+    color: var(--side-bar-main-color);
+    font-weight: 500;
+}
+
+.side-bar > ul > li.separation {
+    padding: 20px;
 }

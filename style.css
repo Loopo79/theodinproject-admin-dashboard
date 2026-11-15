@@ -17,6 +17,8 @@
     --side-bar-main-color: white;
     --header-background-color: white;
     --header-main-color: black;
+    --content-background-color: rgb(227, 227, 234);
+    --content-main-color: black;
 }
 
 * {
@@ -113,7 +115,7 @@ body {
 
 .header > .search-section > .search-bar {
     padding: 4px;
-    background-color: rgb(210, 210, 225);
+    background-color: var(--content-background-color);
     border: none;
     border-radius: 16px;
 }

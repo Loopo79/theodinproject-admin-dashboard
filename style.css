@@ -21,6 +21,7 @@
     --content-main-color: black;
     --content-secondary-color: rgb(110, 110, 110);
     --content-shadow-color: rgb(186, 186, 187);
+    --content-border-color: orange;
 }
 
 * {
@@ -238,7 +239,7 @@ body {
     border-radius: 8px;
     align-items: center;
     padding-right: 32px;
-    border-left: 8px solid orange;
+    border-left: 8px solid var(--content-border-color);
 }
 
 .project-section > .project-card > .project-card-title {

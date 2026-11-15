@@ -10,4 +10,4 @@ Link: [Click here](https://loopo79.github.io/theodinproject-admin-dashboard/)
 
 # This was the provided reference image:-
 
-![image of a website that this project was based on](assets/page_inspriation.png)
+![image of a website that this project was based on](assets/page_inspiration.png)

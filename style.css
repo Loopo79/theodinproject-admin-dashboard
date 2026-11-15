@@ -211,6 +211,47 @@ body {
 
 .project-section {
     grid-area: project-section;
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    gap: 20px;
+}
+
+.project-section > .project-card {
+    display: grid;
+    grid:
+        "project-card-border project-card-title" 64px
+        "project-card-border project-card-description" 1fr
+        "project-card-border project-card-interactable-container" 64px
+        / 18px 1fr;
+    background-color: var(--header-background-color);
+    border-radius: 8px;
+    align-items: center;
+    padding-right: 32px;
+    border-left: 8px solid orange;
+}
+
+.project-section > .project-card > .project-card-title {
+    grid-area: project-card-title;
+}
+
+.project-section > .project-card > .project-card-description {
+    grid-area: project-card-description;
+}
+
+.project-section > .project-card > .project-card-interactable-container {
+    grid-area: project-card-interactable-container;
+    display: grid;
+    grid: 32px / auto-flow 32px;
+    justify-content: end;
+    gap: 32px;
+}
+
+.project-section
+    > .project-card
+    > .project-card-interactable-container
+    > button {
+    background-color: var(--header-background-color);
+    border: none;
 }
 
 .announcement-section-title {

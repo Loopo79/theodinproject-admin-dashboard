@@ -267,6 +267,17 @@ body {
 
 .announcement-section {
     grid-area: announcement-section;
+    background-color: var(--header-background-color);
+    border-radius: 8px;
+    padding: 24px 32px;
+}
+
+.announcement-section > hr {
+    margin: 8px 0;
+}
+
+.announcement-section > .announcement-card > .announcement-card-title {
+    padding-bottom: 8px;
 }
 
 .trending-section-title {

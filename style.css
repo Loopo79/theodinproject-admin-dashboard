@@ -34,6 +34,7 @@ body {
         "side-bar header" 190px
         "side-bar content" 1fr/ 360px 1fr;
     font-family: Roboto;
+    background-color: var(--content-background-color);
 }
 
 .side-bar {

@@ -19,6 +19,7 @@
     --header-main-color: black;
     --content-background-color: rgb(227, 227, 234);
     --content-main-color: black;
+    --content-secondary-color: rgb(110, 110, 110);
     --content-shadow-color: rgb(186, 186, 187);
 }
 
@@ -199,10 +200,16 @@ body {
     gap: 10px;
     background-color: var(--content-background-color);
     box-shadow: inset 0px 4px 4px var(--content-shadow-color);
+    color: var(--content-secondary-color);
 }
 
-.content > h2 {
+.content h3 {
+    color: var(--content-main-color);
+}
+
+.content h2 {
     font-weight: 500;
+    color: var(--content-main-color);
 }
 
 .project-section-title {

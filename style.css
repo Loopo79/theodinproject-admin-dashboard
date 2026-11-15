@@ -203,13 +203,17 @@ body {
     color: var(--content-secondary-color);
 }
 
-.content h3 {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
     color: var(--content-main-color);
 }
 
 .content h2 {
     font-weight: 500;
-    color: var(--content-main-color);
 }
 
 .project-section-title {

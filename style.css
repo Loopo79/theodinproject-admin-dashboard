@@ -290,4 +290,31 @@ body {
 
 .trending-section {
     grid-area: trending-section;
+    display: grid;
+    background-color: var(--header-background-color);
+    border-radius: 16px;
+}
+
+.trending-section > .trending-card {
+    display: grid;
+    grid:
+        "profile-image trending-username" 1fr
+        "profile-image trending-nickname" 1fr / 80px 1fr;
+    align-items: center;
+    padding: 16px;
+}
+
+.trending-section > .trending-card > .profile-image {
+    grid-area: profile-image;
+    padding: 4px 16px;
+}
+
+.trending-section > .trending-card > .trending-username {
+    grid-area: trending-username;
+    align-self: self-end;
+}
+
+.trending-section > .trending-card > .trending-nickname {
+    grid-area: trending-nickname;
+    align-self: self-start;
 }

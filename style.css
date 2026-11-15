@@ -193,10 +193,10 @@ body {
         "project-section-title announcement-section-title" 64px
         "project-section announcement-section" 1fr
         "project-section trending-section-title" 64px
-        "project-section trending-section" 1fr/ 1fr 380px;
+        "project-section trending-section" 1fr/ 1fr 400px;
     align-items: center;
     padding: 20px 16px;
-    gap: 8px;
+    gap: 10px;
     background-color: var(--content-background-color);
     box-shadow: inset 0px 4px 4px var(--content-shadow-color);
 }

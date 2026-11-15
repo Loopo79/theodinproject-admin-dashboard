@@ -13,15 +13,15 @@
 }
 
 :root {
-    --side-bar-background-color: rgb(14, 147, 230);
+    --side-bar-background-color: hsl(217, 98%, 60%);
     --side-bar-main-color: white;
     --header-background-color: white;
     --header-main-color: black;
-    --content-background-color: rgb(227, 227, 234);
+    --content-background-color: hsl(217, 98%, 92%);
     --content-main-color: black;
     --content-secondary-color: rgb(110, 110, 110);
-    --content-shadow-color: rgb(186, 186, 187);
-    --content-border-color: orange;
+    --content-shadow-color: hsl(217, 25%, 62%);
+    --content-border-color: hsl(37, 98%, 60%);
 }
 
 * {

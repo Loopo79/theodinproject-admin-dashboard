@@ -19,6 +19,7 @@
     --header-main-color: black;
     --content-background-color: rgb(227, 227, 234);
     --content-main-color: black;
+    --content-shadow-color: rgb(186, 186, 187);
 }
 
 * {
@@ -182,4 +183,47 @@ body {
     background-color: var(--side-bar-background-color);
     border: none;
     border-radius: 32px;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid:
+        "project-section-title announcement-section-title" 64px
+        "project-section announcement-section" 1fr
+        "project-section trending-section-title" 64px
+        "project-section trending-section" 1fr/ 1fr 380px;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 8px;
+    background-color: var(--content-background-color);
+    box-shadow: inset 0px 4px 4px var(--content-shadow-color);
+}
+
+.content > h2 {
+    font-weight: 500;
+}
+
+.project-section-title {
+    grid-area: project-section-title;
+}
+
+.project-section {
+    grid-area: project-section;
+}
+
+.announcement-section-title {
+    grid-area: announcement-section-title;
+}
+
+.announcement-section {
+    grid-area: announcement-section;
+}
+
+.trending-section-title {
+    grid-area: trending-section-title;
+}
+
+.trending-section {
+    grid-area: trending-section;
 }

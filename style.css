@@ -38,7 +38,7 @@ body {
 }
 
 .side-bar {
-    height: 100vh;
+    height: 100%;
     padding: 12px;
     grid-area: side-bar;
     background-color: var(--side-bar-background-color);

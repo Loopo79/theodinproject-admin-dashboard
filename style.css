@@ -29,14 +29,16 @@
 
 body {
     display: grid;
-    grid-template: 190px [header-end] 1fr / 360px [side-bar-end] 1fr;
+    grid:
+        "side-bar header" 190px
+        "side-bar content" 1fr/ 360px 1fr;
     font-family: Roboto;
 }
 
 .side-bar {
     height: 100vh;
     padding: 12px;
-    grid-column-end: "side-bar-end";
+    grid-area: side-bar;
     background-color: var(--side-bar-background-color);
     color: var(--side-bar-main-color);
 }
@@ -90,6 +92,7 @@ body {
 }
 
 .header {
+    grid-area: header;
     display: grid;
     grid-template: 4fr 6fr / 1fr 500px;
     align-items: center;
